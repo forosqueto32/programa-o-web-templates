@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>One Page Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="One Page">
+    <meta name="description" content="Uma página única sendo desenvolvida para aprendizado">
+    <meta name="keywords" content="One page, One Page Application, Single page, Single Page application">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div id="logo" class="col-md-2">
+                        <a>OnePage</a>
+                    </div>
+                    <div id="navegacao-header" class="col-md-offset-4 col-md-6">
+                        <ul>
+                            <li><a>HOME</a></li>
+                            <li><a onclick="scrollAnimation('sobre-nos')">ABOUT US</a></li>
+                            <li><a onclick="scrollAnimation('portofolio')">PORTOFOLIO</a></li>
+                            <li><a onclick="scrollAnimation('features')">FEATURES</a></li>
+                            <li><a onclick="scrollAnimation('contact')">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="slideshow">
+        <button id="botao-anterior" style="padding: 22px 20px; width: 60px; height: 60px;">
+                <span class="icon-anterior"></span>
+            </button>
+        <div class="container">
+            <div class="col-md-12">
+
+                <div id="item1" class="item-active">
+                    <img id="item1-img" src="images/6.jpg" alt="" class="img-responsive">
+                </div>
+
+                <div id="item2">
+                    <img id="item2-img" src="images/7.jpg" alt="" class="img-responsive">
+                </div>
+
+                <div id="item3">
+                    <img id="item3-img" src="images/5.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <!-- fimCONTAINER -->
+        <button id="botao-proximo" style="padding: 22px 20px; width: 60px; height: 60px;">
+
+                <span class="icon-proximo"></span>
+
+            </button>
+    </div>
+    <!--fimSlideShow -->
+
+    <!-- Sobre Nós-->
+    <section id="sobre-nos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <h3 class="text-center h-custom1">ABOUT US</h3>
+                    <p class="p-custom1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="position: static;">
+                    <div data-anime="right">
+                        <img src="images/1.png" class="img-responsive" alt="">
+                        <p class="p-custom2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni autem minus sint, commodi.</p>
+                    </div>
+                </div>
+
+                <!--painel -->
+                <div id="zona-painel" class="col-md-6" style="position: static;">
+                    <div data-anime="top">
+                        <ul>
+                            <li>
+                                <div class="zona-painel-title">
+                                    <a href="">Web Design</a>
+                                    <button class="btn-zona-painel">
+                                        <span class="seta-btn-zona-painel-right" onclick="aboutBtnConfig()"></span>
+                                    </button>
+                                </div>
+
+                                <div class="zona-painel-content">
+                                    <div>
+                                        <img src="images/accordion1.png" alt="">
+                                        <p class="text-left">Adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                            eiusmod tempor incididunt ut labore</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Lorem Ipsum Dolor sit Amet</a>
+                                <button class="btn-zona-painel">
+
+                                        <span class="seta-btn-zona-painel-right"></span>
+
+                                    </button>
+                            </li>
+                            <li>
+                                <a href="#">Lorem Ipsum Dolor sit Amet</a>
+                                <button class="btn-zona-painel">
+
+                                        <span class="seta-btn-zona-painel-right"></span>
+
+                                    </button>
+                            </li>
+                            <li>
+                                <a href="#">Lorem Ipsum Dolor sit Amet</a>
+                                <button class="btn-zona-painel">
+
+                                        <span class="seta-btn-zona-painel-right"></span>
+
+                                    </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- fim zona painel-->
+            </div>
+        </div>
+    </section>
+    <!-- fim section sobre-nos -->
+
+    <section id="portofolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <h3 class="text-center h-custom1">PORTOFÓLIO</h3>
+                    <p>
+                        <p class="p-custom1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni autem minus sint, commodi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="nav-portofolio" class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <ul>
+                        <li><a id="portofolio-allworks">ALL WORKS</a></li>
+                        <li><a id="portofolio-creative">CREATIVE</a></li>
+                        <li><a id="portofolio-photography">PHOTOGRAPHY</a></li>
+                        <li><a id="portofolio-webdevelopment">WEB DEVELOPMENT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="portofolio-zona-imagens">
+                <div class="row">
+                    <div id="portofolio-zona1" class="col-sm-3 col-md-3 portofolio-zona">
+                        <div class="zona-content">
+                            <img class="portofolio-img" src="images/portfolio/recent/item1.png" alt="">
+                            <div class="zona-description">
+                                <h3><a href="#">Business Theme</a></h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <a href=""><i class="fafa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="portofolio-zona2" class="col-sm-3 col-md-3 portofolio-zona">
+                        <div class="zona-content">
+                            <img class="portofolio-img" src="images/portfolio/recent/item2.png" alt="">
+                            <div class="zona-description">
+                                <h3><a href="#">Business Theme</a></h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <a href=""><i class="fafa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="portofolio-zona3" class="col-sm-3 col-md-3 portofolio-zona">
+                        <div class="zona-content">
+                            <img class="portofolio-img" src="images/portfolio/recent/item3.png" alt="">
+                            <div class="zona-description">
+                                <h3><a href="#">Business Theme</a></h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <a href=""><i class="fafa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="portofolio-zona4" class="col-sm-3 col-md-3 portofolio-zona">
+                        <div class="zona-content">
+                            <img class="portofolio-img" src="images/portfolio/recent/item4.png" alt="">
+                            <div class="zona-description">
+                                <h3><a href="#">Business Theme</a></h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <a href=""><i class="fafa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fimrow-->
+
+                <!------ -->
+                <div class="row">
+                    <div id="portofolio-zona5" class="col-sm-3 col-md-3 portofolio-zona">
+                        <div class="zona-content">
+                            <img class="portofolio-img" src="images/portfolio/recent/item5.png" alt="">
+                            <div class="zona-description">
+                                <h3><a href="#">Business Theme</a></h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <a href=""><i class="fafa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="portofolio-zona6" class="col-sm-3 col-md-3 portofolio-zona">
+                        <div class="zona-content">
+                            <img class="portofolio-img" src="images/portfolio/recent/item6.png" alt="">
+                            <div class="zona-description">
+                                <h3><a href="#">Business Theme</a></h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <a href=""><i class="fafa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="portofolio-zona7" class="col-sm-3 col-md-3 portofolio-zona">
+                        <div class="zona-content">
+                            <img class="portofolio-img" src="images/portfolio/recent/item7.png" alt="">
+                            <div class="zona-description">
+                                <h3><a href="#">Business Theme</a></h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <a href=""><i class="fafa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="portofolio-zona8" class="col-sm-3 col-md-3 portofolio-zona">
+                        <div class="zona-content">
+                            <img class="portofolio-img" src="images/portfolio/recent/item8.png" alt="" style="transition:">
+                            <div class="zona-description">
+                                <h3><a href="#">Business Theme</a></h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <a href=""><i class="fafa-eye"></i> View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fimrow-->
+
+            </div>
+            <!--fim portofolio zona imagens -->
+
+        </div>
+    </section>
+    <!-- fim section portofolio -->
+
+    <section id="features">
+        <div class="container">
+            <div id="features-presentation" class="col-md-offset-3 col-md-6">
+                <h3 class="h-custom1">FEATURES</h3>
+                <p class="p-custom1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+            </div>
+
+            <div id="features-content" class="row">
+                <div class="col-md-4" data-anime="left">
+                    <h3> Responsive </h3>
+                    <img src="images/portfolio/recent/item4.png" alt="item 4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut non cupidatat
+                        skateboard dolor brunch.</p>
+
+                </div>
+
+                <div class="col-md-4" data-anime="bottom">
+                    <h3> Web Design </h3>
+                    <img src="images/portfolio/recent/item5.png" alt="item 5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut non cupidatat
+                        skateboard dolor brunch.</p>
+                </div>
+
+                <div class="col-md-4" data-anime="right">
+                    <h3> Easy Customize</h3>
+                    <img src="images/portfolio/recent/item6.png" alt="item 6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut non cupidatat
+                        skateboard dolor brunch.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim features -->
+
+    <div id="mapzone" style="width: 100%; height: 500px">
+
+    </div>
+
+    <footer id="contact">
+        <div id="primary-footer">
+            <div class="container">
+                <div class="row">
+                    <h3> SIGN UP TO BE NOTIFIED </h3>
+                    <div class="col-md-6" data-anime="top">
+                        <div>
+                            <label> Name </label>
+                            <input type="text" name="name" required="required">
+                        </div>
+                        <div>
+                            <label> Email </label>
+                            <input type="email" name="email" required="required">
+                        </div>
+                        <div>
+                            <label> Phone </label>
+                            <input type="text" name="label" required="required">
+                        </div>
+                        <div>
+                            <label> Company Name </label>
+                            <input type="text" name="companyName" required="required">
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-anime="right">
+                        <div>
+                            <label>Subject</label>
+                            <input type="text" name="subject" required="required">
+                        </div>
+                        <div>
+                            <label>Message</label>
+                            <textarea name="message" id="form-message" required="required" rows="10"> 
+                                
+                                </textarea>
+                        </div>
+
+                        <div>
+                            <button class="btn-submit" type="submit" name="submit">Submit Message</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim row -->
+            </div>
+        </div>
+
+        <div id="secondary-footer">
+            <div class="container">
+                <div class="col-md-offset-3 col-md-6">
+                    <p>&copy; 2015 bootstraptaste. All Rights Reserved. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="result"> Aqui</div>
+    <!--Javascript -->
+    <script>
+        function myMap() {
+            var mapProper = {
+                center: new google.maps.LatLng(-6.232139, 106.829632),
+                zoom: 15
+            };
+
+            var map = new google.maps.Map(document.getElementById("mapzone"), mapProper);
+            var marker = new google.maps.Marker({ position: mapProper.center });
+            marker.setMap(map);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByK4ElarfraUOTq009i_03h64Y7cbSWh8&callback=myMap">
+
+    </script>
+    <script src="bootstrap/bootstrap.js"></script>
+    <script src="js/estilo.js"></script>
+</body>
+
+</html>
