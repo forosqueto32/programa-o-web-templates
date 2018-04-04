@@ -25,16 +25,26 @@ and open the template in the editor.
         <div>
             <div class="container">
                 <div class="row">
-                    <div id="logo" class="col-md-2">
+                    <div id="logo" class="col-sm-4 col-md-2">
                         <a>OnePage</a>
                     </div>
-                    <div id="navegacao-header" class="col-md-offset-4 col-md-6">
+                    <div id="navegacao-header" class="col-sm-8 col-md-offset-4 col-md-6">
                         <ul>
-                            <li><a>HOME</a></li>
-                            <li><a onclick="scrollAnimation('sobre-nos')">ABOUT US</a></li>
-                            <li><a onclick="scrollAnimation('portofolio')">PORTOFOLIO</a></li>
-                            <li><a onclick="scrollAnimation('features')">FEATURES</a></li>
-                            <li><a onclick="scrollAnimation('contact')">CONTACT</a></li>
+                            <li>
+                                <a>HOME</a>
+                            </li>
+                            <li>
+                                <a onclick="scrollAnimation('sobre-nos')">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a onclick="scrollAnimation('portofolio')">PORTOFOLIO</a>
+                            </li>
+                            <li>
+                                <a onclick="scrollAnimation('features')">FEATURES</a>
+                            </li>
+                            <li>
+                                <a onclick="scrollAnimation('contact')">CONTACT</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -44,34 +54,30 @@ and open the template in the editor.
 
     <div id="slideshow">
         <button id="botao-anterior" style="padding: 22px 20px; width: 60px; height: 60px;">
-                <span class="icon-anterior"></span>
-            </button>
+            <span class="icon-anterior"></span>
+        </button>
         <div class="container">
             <div class="col-md-12">
-
-                <div id="item1" class="item-active">
+                <div id="item1" class="item-active item">
                     <img id="item1-img" src="images/6.jpg" alt="" class="img-responsive">
                 </div>
 
-                <div id="item2">
+                <div id="item2" class="item">
                     <img id="item2-img" src="images/7.jpg" alt="" class="img-responsive">
                 </div>
 
-                <div id="item3">
+                <div id="item3" class="item">
                     <img id="item3-img" src="images/5.jpg" alt="" class="img-responsive">
                 </div>
             </div>
         </div>
         <!-- fimCONTAINER -->
         <button id="botao-proximo" style="padding: 22px 20px; width: 60px; height: 60px;">
-
-                <span class="icon-proximo"></span>
-
-            </button>
+            <span class="icon-proximo"></span>
+        </button>
     </div>
     <!--fimSlideShow -->
 
-    <!-- Sobre Nós-->
     <section id="sobre-nos">
         <div class="container">
             <div class="row">
@@ -99,7 +105,7 @@ and open the template in the editor.
                         <ul>
                             <li>
                                 <div class="zona-painel-title">
-                                    <a href="">Web Design</a>
+                                    <a>Web Design</a>
                                     <button class="btn-zona-painel">
                                         <span class="seta-btn-zona-painel-right" onclick="aboutBtnConfig()"></span>
                                     </button>
@@ -117,26 +123,22 @@ and open the template in the editor.
                             <li>
                                 <a href="#">Lorem Ipsum Dolor sit Amet</a>
                                 <button class="btn-zona-painel">
-
-                                        <span class="seta-btn-zona-painel-right"></span>
-
-                                    </button>
+                                    <span class="seta-btn-zona-painel-right"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#">Lorem Ipsum Dolor sit Amet</a>
+                                <button class="btn-zona-painel">
+                                    <span class="seta-btn-zona-painel-right"></span>
+                                </button>
                             </li>
                             <li>
                                 <a href="#">Lorem Ipsum Dolor sit Amet</a>
                                 <button class="btn-zona-painel">
 
-                                        <span class="seta-btn-zona-painel-right"></span>
+                                    <span class="seta-btn-zona-painel-right"></span>
 
-                                    </button>
-                            </li>
-                            <li>
-                                <a href="#">Lorem Ipsum Dolor sit Amet</a>
-                                <button class="btn-zona-painel">
-
-                                        <span class="seta-btn-zona-painel-right"></span>
-
-                                    </button>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -162,22 +164,33 @@ and open the template in the editor.
             <div class="row">
                 <div class="col-md-offset-3 col-md-6">
                     <ul>
-                        <li><a id="portofolio-allworks">ALL WORKS</a></li>
-                        <li><a id="portofolio-creative">CREATIVE</a></li>
-                        <li><a id="portofolio-photography">PHOTOGRAPHY</a></li>
-                        <li><a id="portofolio-webdevelopment">WEB DEVELOPMENT</a></li>
+                        <li>
+                            <a id="portofolio-allworks">ALL WORKS</a>
+                        </li>
+                        <li>
+                            <a id="portofolio-creative">CREATIVE</a>
+                        </li>
+                        <li>
+                            <a id="portofolio-photography">PHOTOGRAPHY</a>
+                        </li>
+                        <li>
+                            <a id="portofolio-webdevelopment">WEB DEVELOPMENT</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div id="portofolio-zona-imagens">
+            <div id="portofolio-zona-imagens" style="border:1px solid red;">
                 <div class="row">
                     <div id="portofolio-zona1" class="col-sm-3 col-md-3 portofolio-zona">
                         <div class="zona-content">
                             <img class="portofolio-img" src="images/portfolio/recent/item1.png" alt="">
                             <div class="zona-description">
-                                <h3><a href="#">Business Theme</a></h3>
+                                <h3>
+                                    <a href="#">Business Theme</a>
+                                </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href=""><i class="fafa-eye"></i> View</a>
+                                <a href="">
+                                    <i class="fafa-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
@@ -186,9 +199,12 @@ and open the template in the editor.
                         <div class="zona-content">
                             <img class="portofolio-img" src="images/portfolio/recent/item2.png" alt="">
                             <div class="zona-description">
-                                <h3><a href="#">Business Theme</a></h3>
+                                <h3>
+                                    <a href="#">Business Theme</a>
+                                </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href=""><i class="fafa-eye"></i> View</a>
+                                <a href="">
+                                    <i class="fafa-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
@@ -197,9 +213,12 @@ and open the template in the editor.
                         <div class="zona-content">
                             <img class="portofolio-img" src="images/portfolio/recent/item3.png" alt="">
                             <div class="zona-description">
-                                <h3><a href="#">Business Theme</a></h3>
+                                <h3>
+                                    <a href="#">Business Theme</a>
+                                </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href=""><i class="fafa-eye"></i> View</a>
+                                <a href="">
+                                    <i class="fafa-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
@@ -208,24 +227,30 @@ and open the template in the editor.
                         <div class="zona-content">
                             <img class="portofolio-img" src="images/portfolio/recent/item4.png" alt="">
                             <div class="zona-description">
-                                <h3><a href="#">Business Theme</a></h3>
+                                <h3>
+                                    <a href="#">Business Theme</a>
+                                </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href=""><i class="fafa-eye"></i> View</a>
+                                <a href="">
+                                    <i class="fafa-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--fimrow-->
 
-                <!------ -->
+                <!-- -->
                 <div class="row">
                     <div id="portofolio-zona5" class="col-sm-3 col-md-3 portofolio-zona">
                         <div class="zona-content">
                             <img class="portofolio-img" src="images/portfolio/recent/item5.png" alt="">
                             <div class="zona-description">
-                                <h3><a href="#">Business Theme</a></h3>
+                                <h3>
+                                    <a href="#">Business Theme</a>
+                                </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href=""><i class="fafa-eye"></i> View</a>
+                                <a href="">
+                                    <i class="fafa-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
@@ -234,9 +259,12 @@ and open the template in the editor.
                         <div class="zona-content">
                             <img class="portofolio-img" src="images/portfolio/recent/item6.png" alt="">
                             <div class="zona-description">
-                                <h3><a href="#">Business Theme</a></h3>
+                                <h3>
+                                    <a href="#">Business Theme</a>
+                                </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href=""><i class="fafa-eye"></i> View</a>
+                                <a href="">
+                                    <i class="fafa-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
@@ -245,9 +273,12 @@ and open the template in the editor.
                         <div class="zona-content">
                             <img class="portofolio-img" src="images/portfolio/recent/item7.png" alt="">
                             <div class="zona-description">
-                                <h3><a href="#">Business Theme</a></h3>
+                                <h3>
+                                    <a href="#">Business Theme</a>
+                                </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href=""><i class="fafa-eye"></i> View</a>
+                                <a href="">
+                                    <i class="fafa-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
@@ -256,9 +287,12 @@ and open the template in the editor.
                         <div class="zona-content">
                             <img class="portofolio-img" src="images/portfolio/recent/item8.png" alt="" style="transition:">
                             <div class="zona-description">
-                                <h3><a href="#">Business Theme</a></h3>
+                                <h3>
+                                    <a href="#">Business Theme</a>
+                                </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href=""><i class="fafa-eye"></i> View</a>
+                                <a href="">
+                                    <i class="fafa-eye"></i> View</a>
                             </div>
                         </div>
                     </div>
@@ -285,7 +319,6 @@ and open the template in the editor.
                     <img src="images/portfolio/recent/item4.png" alt="item 4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut non cupidatat
                         skateboard dolor brunch.</p>
-
                 </div>
 
                 <div class="col-md-4" data-anime="bottom">
@@ -318,30 +351,30 @@ and open the template in the editor.
                     <h3> SIGN UP TO BE NOTIFIED </h3>
                     <div class="col-md-6" data-anime="top">
                         <div>
-                            <label> Name </label>
-                            <input type="text" name="name" required="required">
+                            <label for="form-name"> Name </label>
+                            <input type="text" name="name" required="required" id="form-name">
                         </div>
                         <div>
-                            <label> Email </label>
-                            <input type="email" name="email" required="required">
+                            <label for="form-email"> Email </label>
+                            <input type="email" name="email" required="required" id="form-email">
                         </div>
                         <div>
-                            <label> Phone </label>
-                            <input type="text" name="label" required="required">
+                            <label for="form-phone"> Phone </label>
+                            <input type="text" name="label" required="required" id="form-phone">
                         </div>
                         <div>
-                            <label> Company Name </label>
-                            <input type="text" name="companyName" required="required">
+                            <label for="form-company-name"> Company Name </label>
+                            <input type="text" name="companyName" required="required" id="form-company-name">
                         </div>
                     </div>
                     <div class="col-md-6" data-anime="right">
                         <div>
-                            <label>Subject</label>
-                            <input type="text" name="subject" required="required">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" name="subject" required="required" id="form-subject">
                         </div>
                         <div>
-                            <label>Message</label>
-                            <textarea name="message" id="form-message" required="required" rows="10"> 
+                            <label for="form-message">Message</label>
+                            <textarea name="message" id="form-message" required="required" rows="5"> 
                                 
                                 </textarea>
                         </div>
@@ -364,7 +397,6 @@ and open the template in the editor.
         </div>
     </footer>
 
-    <div id="result"> Aqui</div>
     <!--Javascript -->
     <script>
         function myMap() {

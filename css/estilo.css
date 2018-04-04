@@ -63,8 +63,6 @@ header > div{
 #slideshow{
     position: relative;
     height: 600px;
-    overflow: hidden;
-
 }
 #slideshow div{
     width: 100%;
@@ -77,19 +75,22 @@ header > div{
     width: 100%;
 }
 
+
+.item > img{
+    position: absolute;
+    
+}
 .item-active > img{
     transition: margin 2s linear;
 }
 
 #item1 > img{
-    position: absolute;
     z-index: 3;
     transition: margin 0.5s linear;
 }
 
 
 #item2 > img{
-    position: absolute;
     z-index: 2;
     margin-left: 100%;
     transition: margin 0.5s linear;
@@ -97,7 +98,6 @@ header > div{
 
 
 #item3 > img{
-    position: absolute;
     z-index: 1;
     margin-left: -100%;
     transition: margin 0.5s linear;
@@ -302,8 +302,6 @@ header > div{
 #portofolio-zona1{
     top: 0;
     left: 0;
-
-
 }
 
 #portofolio-zona2{
